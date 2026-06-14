@@ -9,19 +9,24 @@ body{
     font-family:Arial,sans-serif;
     background: linear-gradient(135deg,#ff6a00,#ee0979);
     color:white;
+
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
 }
 
-/* Animation */
+/* Container */
 .container{
-    margin-top:120px;
-    animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
+/* Animation */
 @keyframes fadeIn{
     from{
         opacity:0;
-        transform:translateY(20px);
+        transform:translateY(10px);
     }
     to{
         opacity:1;
@@ -30,29 +35,29 @@ body{
 }
 
 h1{
-    font-size:80px;
-    margin-bottom:10px;
-    letter-spacing:6px;
+    font-size:60px;
+    margin:0 0 10px 0;
+    letter-spacing:4px;
     text-transform:uppercase;
     text-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 p{
-    font-size:22px;
-    margin-bottom:30px;
+    font-size:18px;
+    margin-bottom:20px;
 }
 
 /* Base Button */
 .btn{
     display:inline-block;
-    margin:10px;
+    margin:8px;
     background: linear-gradient(45deg,#ffffff,#e0e0e0);
     color:#ee0979;
-    padding:15px 40px;
+    padding:12px 28px;
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
-    font-size:18px;
+    font-size:16px;
     transition:0.3s;
     box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
@@ -67,21 +72,14 @@ p{
     color:white;
 }
 
-/* Separation text */
-.small-title{
-    font-size:16px;
-    opacity:0.8;
-    margin-top:60px;
-}
-
 /* Mobile */
 @media (max-width:600px){
     h1{
-        font-size:45px;
+        font-size:40px;
     }
 
     p{
-        font-size:18px;
+        font-size:16px;
     }
 }
 </style>
@@ -94,19 +92,13 @@ p{
     <h1>khozamy</h1>
     <p>Draw anything now !</p>
 
-    <!-- Brand account -->
     <a class="btn" href="https://instagram.com/khozamy_art" target="_blank">
         📷 Instagram
     </a>
 
-    <!-- Personal accounts -->
-    <div>
-        <p class="small-title">Personal accounts</p>
-
-        <a class="btn facebook" href="https://www.facebook.com/share/1XsWQcefaG/" target="_blank">
-            📘 Facebook
-        </a>
-    </div>
+    <a class="btn facebook" href="https://www.facebook.com/share/1XsWQcefaG/" target="_blank">
+        📘 Facebook
+    </a>
 </div>
 
 </body>
